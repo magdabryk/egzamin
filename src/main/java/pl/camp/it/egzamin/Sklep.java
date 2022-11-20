@@ -1,8 +1,5 @@
 package pl.camp.it.egzamin;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Sklep {
@@ -21,7 +18,6 @@ public class Sklep {
                 System.out.println("niepoprawne wartosci");
                 flag = false;
             }else {
-
 
                 for (int i = 0; i < coin; i++) {
                     if (apple <= oranges) {
