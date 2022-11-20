@@ -20,23 +20,24 @@ public class Sklep {
             if (apple < 0 || oranges < 0 || coin < 0) {
                 System.out.println("niepoprawne wartosci");
                 flag = false;
-            }
+            }else {
 
 
-            for (int i = 0; i < coin; i++) {
-                if (apple <= oranges) {
-                    apple++;
-                } else {
-                    oranges++;
+                for (int i = 0; i < coin; i++) {
+                    if (apple <= oranges) {
+                        apple++;
+                    } else {
+                        oranges++;
+                    }
                 }
-            }
-            int difference = Math.abs(apple - oranges);
+                int difference = Math.abs(apple - oranges);
 
-            System.out.println("Liczba jablek " + apple);
-            System.out.println("liczba pomaranczy " + oranges);
-            System.out.println("różnica " + difference);
-            scanner.close();
-            flag = false;
+                System.out.println("Liczba jablek " + apple);
+                System.out.println("liczba pomaranczy " + oranges);
+                System.out.println("różnica " + difference);
+                scanner.close();
+                flag = false;
+            }
         }
     }
 }
